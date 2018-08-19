@@ -7,7 +7,7 @@ $tempArray = json_decode($inp);
 array_push($tempArray, $data_array);
 $jsonData = json_encode($tempArray);
 file_put_contents('db.json', $jsonData);
-  $new_data = file_get_contents('db.json')
+  $new_data = file_get_contents('db.json');
   print_r(json_decode($new_data));
 }
 ?>
